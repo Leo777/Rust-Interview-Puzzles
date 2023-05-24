@@ -1,5 +1,5 @@
 // Problem
-// We need to check if an unsorted vector of numbers vec contains a contiguous sub-vector (slice) of 0 sum.
+// We need to find a maximum length slice (contiguous sub-vector) with a provided sum of the elements in a given vector vec. 
 
 // Example 1:
 
