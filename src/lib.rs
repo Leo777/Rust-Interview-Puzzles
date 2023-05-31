@@ -5,3 +5,4 @@ pub mod find_longest_slice_with_a_given_sum;
 pub mod sort_binary_vector;
 pub mod find_equilibrium;
 pub mod move_all_zeroes_to_the_end;
+pub mod find_majority_element_in_vec;
