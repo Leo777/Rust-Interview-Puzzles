@@ -25,11 +25,10 @@ use std::collections::HashSet;
 fn find_pairs_with_provided_difference(numbers: &Vec<i32>, diff: i32) -> Vec<(i32, i32)> {
     let mut set = HashSet::new();
 
-    for e in numbers {
-        numbers.iter().for_each(|&e| {
-            set.insert(e);
-        });
-    }
+    numbers.iter().for_each(|&e| {
+        set.insert(e);
+    });
+
     numbers
         .iter()
         .flat_map(|&e| {
