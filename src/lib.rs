@@ -8,3 +8,4 @@ pub mod move_all_zeroes_to_the_end;
 pub mod find_majority_element_in_vec;
 pub mod maximum_slice;
 pub mod find_pairs_with_provided_diff;
+pub mod quick_sort;
