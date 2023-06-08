@@ -1,39 +1,27 @@
 // Problem
-// We need to find a maximum length slice (contiguous sub-vector) with a provided sum of the elements in a given vector vec.
+// We need to sort a provided vector vec using Quicksort algorithm. It is a commonly used divide and conquer sorting algorithm that on average has O(n log n) time complexity.
 
 // Example 1:
 
-// Input: vec = [5, 6, -5, 5, 3, 4, 1], sum = 7
-// Output: [-5, 5, 3, 4]
-// Explanation: This is the longest slice (length = 4) that has a sum of the elements equals to 7.
+// Input: vec = [-4, 1, 25, 50, 8, 10, 23]
+// Output: [-4, 1, 8, 10, 23, 25, 50]
+
+
 // Example 2:
 
-// Input: vec = [5, 6, -5, 5, 3, 4, 1], sum = 5
-// Output: [4, 1]
-// Explanation: This is the longest slice (length = 2) that has a sum of the elements equals to 5.
-// Example 3:
+// Input: vec = [2, 1, 6, 10, 4, 1, 3, 9, 7]
+// Output: [1, 1, 2, 3, 4, 6, 7, 9, 10] 
 
-// Input: vec = [1, 2, 3], sum = 10
-// Output: None
-// Explanation: There are no slices having a sum of the elements equals to 10.
-
-//Notes:
-// Data structures: HashMap
-// Implementation: Create HashMap with 0,0 KV and four variables for tracking
-// max_length,
-// max_length_start_index,
-// max_length_end_index,
-// current_sum
-
-// Iterate through the elements of the numbers array and accumulate each element to the current_sum.
-// Next, check if the difference between the current_sum and the sum is already stored as a key in the map.
-//  If it exists, update the max_length and the indices (max_length_start_index and max_length_end_index) based on the current indices.
-//  If the current_sum is unique, add it to the map as a key with the value of index + 1.
-//  Finally, compare the max_length_start_index and max_length_end_index and
-//  return a slice from the numbers array using these indices to represent the resulting longest contiguous subarray with the given sum.
+//Notes: We need 2 functions partion and qsort.
+// 1) Provie slice of all elements to qsort
+// 2) Find pivot in the slice(could be last, first or middle element) in partition function
+//  and move all elements less than pivot to the left and all elements greater than pivot to the right.
+// at the end put pivot to the correct position numbers.swap(pivot_idx, next_idx) and return pivon index. 
+// 3) In qsort if pivot > 0 put left part of the slice in qsort numbers[0..pivot_index],
+// if pivot less then last element put the right part of the slice numbers[pivot_index + 1..len]. 
 
 // Complexity:
-// Time: O(n)
+// Time: average O(n log n),
 // Space: O(n)
 
 #[allow(dead_code)]
@@ -92,10 +80,10 @@ mod test {
     );
     }
 
-    // #[test]
-    // fn test_case_3() {
-    //     let numbers = vec![1, 2, 3];
-    //     let sum = 10;
-    //     assert_eq!(longest_slice_with_given_sum(&numbers, sum), None);
-    // }
+    #[test]
+    fn test_case_3() {
+        let mut numbers = vec![0, 10, 9, 8, 7, 6, 5, -1];
+        assert_eq!(quick_sort(&mut numbers), &vec![-1, 0, 5, 6, 7, 8, 9, 10]
+    );
+    }  
 }
