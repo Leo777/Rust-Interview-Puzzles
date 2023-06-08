@@ -21,7 +21,7 @@
 // if pivot less then last element put the right part of the slice numbers[pivot_index + 1..len]. 
 
 // Complexity:
-// Time: average O(n log n),
+// Time: average O(n log n), O(n^2) if array already sorted and we peak first element as pivot
 // Space: O(n)
 
 #[allow(dead_code)]
