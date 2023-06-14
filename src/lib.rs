@@ -10,3 +10,4 @@ pub mod maximum_slice;
 pub mod find_pairs_with_provided_diff;
 pub mod quick_sort;
 pub mod find_the_lowest_index_of_rep_element;
+pub mod find_pivot_index;
