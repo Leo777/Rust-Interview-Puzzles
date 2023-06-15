@@ -24,7 +24,9 @@
 
 //Notes:
 // Data structures: HashMap
-// Implementation: In firsr loop add elements to the HashSet. In second check if set contains element + diff if yes, remove from the set and collect the pair
+// Implementation: Loop through the vector in reverse order and add index and min value to the HashMap.
+// In second loop check if the vector element is between left max value and right min value.
+//find_map function useful in this context because it returns first not None element;
 
 // Complexity:
 // Time: O(n)
