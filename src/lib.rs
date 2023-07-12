@@ -12,3 +12,4 @@ pub mod quick_sort;
 pub mod find_the_lowest_index_of_rep_element;
 pub mod find_pivot_index;
 pub mod check_if_number_is_palindrom;
+pub mod sqrt;
