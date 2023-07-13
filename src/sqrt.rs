@@ -21,7 +21,7 @@
 // Use Binary Search. The idea is to divide the interval of numbers by 2 to get the middle number mid and then continue the search within either the left or the right half of the interval, repeating the exercise while left < right.
 
 // Complexity:
-// Time: O(n)
+// Time: O(log n)
 
 
 #[allow(dead_code)]
