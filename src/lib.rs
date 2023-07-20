@@ -14,3 +14,4 @@ pub mod find_pivot_index;
 pub mod check_if_number_is_palindrom;
 pub mod sqrt;
 pub mod reverse_number;
+pub mod find_common_prefix;
