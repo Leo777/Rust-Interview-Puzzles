@@ -43,6 +43,26 @@ fn find_longest_common_prefix_string<'a>(vec: &Vec<&'a str>) -> &'a str {
     (1..vec.len()).fold(vec[0], |prx, i| common_prefix(prx, vec[i]))
 }
 
+fn find_longest_common_prefix_string2<'a>(vec: &Vec<&'a str>) -> &'a str {
+
+    if vec.is_empty() {
+        return "";
+    }
+
+    let first_string = vec[0];
+    let mut min = vec[0].len();
+
+    for i in 1..vec.len() {
+        for (j, (ch1,ch2)) in first_string.chars().zip(vec[i].chars()).enumerate() {
+            if ch1 != ch2 {
+                return &first_string[0..j];
+            }
+            min = usize::min(min, vec[i].len()) 
+        }
+    }
+    &first_string[0..min]
+}
+
 #[cfg(test)]
 mod test {
     use super::*;
@@ -50,18 +70,18 @@ mod test {
     #[test]
     fn test_case_1() {
         let strings = &vec!["abcd", "abc"];
-        assert_eq!(find_longest_common_prefix_string(strings), "abc");
+        assert_eq!(find_longest_common_prefix_string2(strings), "abc");
     }
 
     #[test]
     fn test_case_2() {
         let strings = &vec!["abcd", "abcdef", "abc", "abcde"];
-        assert_eq!(find_longest_common_prefix_string(strings), "abc");
+        assert_eq!(find_longest_common_prefix_string2(strings), "abc");
     }
 
     #[test]
     fn test_case_3() {
         let strings = &vec!["def"];
-        assert_eq!(find_longest_common_prefix_string(strings), "def");
+        assert_eq!(find_longest_common_prefix_string2(strings), "def");
     }
 }
