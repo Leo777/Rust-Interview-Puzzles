@@ -15,3 +15,4 @@ pub mod check_if_number_is_palindrom;
 pub mod sqrt;
 pub mod reverse_number;
 pub mod find_common_prefix;
+pub mod partition_vector_into_two_slices;
