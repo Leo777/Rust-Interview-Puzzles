@@ -17,7 +17,7 @@
 // Output: "def"
 
 //Notes:
-// Use Binary Search. The idea is to divide the interval of numbers by 2 to get the middle number mid and then continue the search within either the left or the right half of the interval, repeating the exercise while left < right.
+// 
 
 // Complexity:
 // Time: O(S) - Where S is sum of all strings characters
