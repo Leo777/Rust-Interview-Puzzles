@@ -17,3 +17,4 @@ pub mod reverse_number;
 pub mod find_common_prefix;
 pub mod partition_vector_into_two_slices;
 pub mod valid_brackets;
+pub mod check_if_two_strings_anagrams;

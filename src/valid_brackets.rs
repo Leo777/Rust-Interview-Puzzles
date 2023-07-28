@@ -37,9 +37,9 @@ fn has_valid_brackets(string: &str) -> bool {
     let mut stack = Vec::new();
 
     for char in string.chars() {
-        if OPEN_BRACKETS.contains(|c| c == char) {
+        if OPEN_BRACKETS.contains(char) {
             stack.push(char);
-        } else if CLOSE_BRACKETS.contains(|c| c == char) {
+        } else if CLOSE_BRACKETS.contains(char) {
             let popped = stack.pop();
 
             match (popped, char) {
