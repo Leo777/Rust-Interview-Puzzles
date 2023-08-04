@@ -43,6 +43,7 @@ fn find_longest_common_prefix_string<'a>(vec: &Vec<&'a str>) -> &'a str {
     (1..vec.len()).fold(vec[0], |prx, i| common_prefix(prx, vec[i]))
 }
 
+#[allow(dead_code)]
 fn find_longest_common_prefix_string2<'a>(vec: &Vec<&'a str>) -> &'a str {
 
     if vec.is_empty() {
