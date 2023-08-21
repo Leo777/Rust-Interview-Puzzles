@@ -19,3 +19,5 @@ pub mod partition_vector_into_two_slices;
 pub mod valid_brackets;
 pub mod check_if_two_strings_anagrams;
 pub mod find_missing_natural_number;
+pub mod raise_number_to_power;
+pub mod fibonacci_number;
