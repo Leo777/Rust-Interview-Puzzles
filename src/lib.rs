@@ -22,3 +22,4 @@ pub mod find_missing_natural_number;
 pub mod raise_number_to_power;
 pub mod fibonacci_number;
 pub mod power_of_two;
+pub mod remove_adjacent_duplicate_char;
