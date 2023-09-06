@@ -14,3 +14,4 @@ pub mod power_of_two;
 pub mod raise_number_to_power;
 pub mod remove_adjacent_duplicate_char;
 pub mod find;
+pub mod prime_number;
