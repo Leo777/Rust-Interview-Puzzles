@@ -8,3 +8,4 @@ pub mod find_the_lowest_index_of_rep_element;
 pub mod find_pivot_index;
 pub mod find_common_prefix;
 pub mod find_missing_natural_number;
+pub mod find_peak_element;
