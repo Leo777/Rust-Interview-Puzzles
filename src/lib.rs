@@ -16,3 +16,4 @@ pub mod remove_adjacent_duplicate_char;
 pub mod find;
 pub mod prime_number;
 pub mod check_duplicates_in_vector;
+pub mod sum_two_binary_strings;
