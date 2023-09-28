@@ -9,3 +9,4 @@ pub mod find_pivot_index;
 pub mod find_common_prefix;
 pub mod find_missing_natural_number;
 pub mod find_peak_element;
+pub mod find_first_uniq_char;
