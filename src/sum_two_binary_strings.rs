@@ -20,7 +20,7 @@ fn add_binary_strings(s1: &str, s2: &str) -> String {
 
     let mut short_iter = short_str.chars().rev();
     let mut carry = 0;
-    let res: String = long_str
+    let mut res: String = long_str
         .chars()
         .rev()
         .map(|lchar| {
@@ -44,6 +44,10 @@ fn add_binary_strings(s1: &str, s2: &str) -> String {
         })
         .collect();
 
+    if carry == 1 {
+        res.push('1');
+    }
+
     res.chars().rev().collect()
 }
 
@@ -55,7 +59,7 @@ mod test {
     fn test_case_1() {
         let s1 = "10000";
         let s2 = "1";
-        assert_eq!(add_binary_strings(s1, s2),"10001");
+        assert_eq!(add_binary_strings(s1, s2), "10001");
     }
 
     #[test]
