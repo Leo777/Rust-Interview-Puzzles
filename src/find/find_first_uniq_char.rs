@@ -18,8 +18,7 @@ fn find_unique_character(string: &str) -> Option<char> {
     let mut map = HashMap::new();
 
     string.chars().for_each(|c| {
-       let count = map.entry(c).or_insert(0u8);
-        *count += 1;
+       map.entry(c).and_modify(|counter| *counter += 1).or_insert(1u8);
     });
 
     string.chars().find(|c| map.get(c) == Some(&1))
