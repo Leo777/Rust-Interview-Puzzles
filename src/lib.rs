@@ -18,3 +18,4 @@ pub mod prime_number;
 pub mod check_duplicates_in_vector;
 pub mod sum_two_binary_strings;
 pub mod is_ugly_number;
+pub mod form_largest_number;
