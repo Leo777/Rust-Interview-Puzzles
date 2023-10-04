@@ -11,3 +11,4 @@ pub mod find_missing_natural_number;
 pub mod find_peak_element;
 pub mod find_first_uniq_char;
 pub mod find_pivot_number;
+pub mod find_common_factors;
