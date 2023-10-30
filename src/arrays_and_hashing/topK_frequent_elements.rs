@@ -32,6 +32,6 @@ mod test {
     fn test_case_1() {
         let nums = vec![1,1,1,2,2,3];
         let k = 2;
-        assert_eq!(two_sum(nums, k), vec![1, 2]);
+        assert_eq!(top_k_frequent_elements(nums, k), vec![1, 2]);
     }
 }
