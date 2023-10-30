@@ -10,7 +10,7 @@
 // Space: O(n)
 
 #[allow(dead_code)]
-pub fn two_sum(nums: Vec<i32>, k: i32) -> Vec<i32> {
+pub fn top_k_frequent_elements(nums: Vec<i32>, k: i32) -> Vec<i32> {
     let mut map = std::collections::HashMap::new();
 
     for &e in nums.iter() {
