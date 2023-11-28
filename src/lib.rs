@@ -15,6 +15,7 @@ pub mod raise_number_to_power;
 pub mod remove_adjacent_duplicate_char;
 pub mod find;
 pub mod arrays_and_hashing;
+pub mod two_pointers;
 pub mod prime_number;
 pub mod check_duplicates_in_vector;
 pub mod sum_two_binary_strings;
