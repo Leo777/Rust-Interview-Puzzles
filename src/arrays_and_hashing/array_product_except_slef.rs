@@ -7,7 +7,7 @@
 
 // Complexity:
 // Time: O(n)
-// Space: O(1)
+// Space: O(n)
 
 #[allow(dead_code)]
 fn array_product_except_self(nums: Vec<i32>) -> Vec<i32> {
