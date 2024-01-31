@@ -13,10 +13,10 @@ fn binary_search(numbers: Vec<i32>, target: i32) -> i32 {
 
     while l <= r {
         let middle = l + (r - l) /2;
-        match numbers[middle].cmp(&target) {
+        match target.cmp(&numbers[middle]) {
             Ordering::Equal => return middle as i32,
-            Ordering::Greater => r = middle - 1,
-            Ordering::Less => l = middle + 1,
+            Ordering::Greater => r = middle,
+            Ordering::Less => l = middle - 1,
         }
     }
     -1
