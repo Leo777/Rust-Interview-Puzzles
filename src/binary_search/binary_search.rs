@@ -15,8 +15,8 @@ fn binary_search(numbers: Vec<i32>, target: i32) -> i32 {
         let middle = l + (r - l) /2;
         match target.cmp(&numbers[middle]) {
             Ordering::Equal => return middle as i32,
-            Ordering::Greater => r = middle,
-            Ordering::Less => l = middle - 1,
+            Ordering::Greater => l = middle + 1,
+            Ordering::Less => r = middle - 1,
         }
     }
     -1
