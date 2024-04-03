@@ -23,3 +23,4 @@ pub mod is_ugly_number;
 pub mod form_largest_number;
 pub mod stack;
 pub mod binary_search;
+pub mod sliding_window;
